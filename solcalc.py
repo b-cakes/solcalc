@@ -25,3 +25,14 @@ def sell_unit_gm(sell_unit: float, gm: float) -> float:
     cost_unit = sell_unit - (gm * sell_unit)
     return cost_unit
 
+test1 = cost_watt_gm(1.00, 0.20)
+print(test1)
+
+test2 = sell_watt_gm(1.25, 0.20)
+print(test2)
+
+test3 = cost_unit_gm(400.00, 0.20)
+print(test3)
+
+test4 = sell_unit_gm(500.00, 0.20)
+print(test4)

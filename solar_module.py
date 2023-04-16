@@ -26,17 +26,12 @@ class SolarModule:
         print(self.watt_cost)
         print(self.watt_sell)
 
-
 mod_1 = SolarModule('REC', 'NP3')
 
 mod_1.rating(400)
-
 mod_1.cost(0.71)
-
 mod_1.show()
 
 mod_1.rating(500)
-
 mod_1.sell(1.00)
-
 mod_1.show()
