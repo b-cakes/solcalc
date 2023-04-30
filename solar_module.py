@@ -2,36 +2,35 @@
 
 class SolarModule:
 
-    def __init__(self, manufacturer: str, product_line: str):
-        self.mfg = manufacturer
-        self.line = product_line
-        self.watt_rating = 0
-        self.watt_cost = 0.00
-        self.watt_sell = 0.00
+    def __init__(self):
+        self.mfg: str | None = None
+        self.line: str | None = None
+        self.watt_rating: int = 0
+        self.cost_watt: float = 0.00
+        self.sell_watt: float = 0.00
+        self.cost_unit: float = 0.00
+        self.sell_unit: float = 0.00
+        self.gm: float = 0.00
+        self.profit: float = 0.00
 
     def rating(self, watt_rating: int):
         self.watt_rating = watt_rating
 
-    def cost(self, watt_cost: float):
-        self.watt_cost = watt_cost
+    def cost(self, cost_watt: float):
+        self.cost_watt = cost_watt
 
-    def sell(self, watt_sell: float):
-        self.watt_sell = watt_sell
+    def sell(self, sell_watt: float):
+        self.sell_watt = sell_watt
 
     def show(self):
         print(self)
         print(self.mfg)
         print(self.line)
         print(self.watt_rating)
-        print(self.watt_cost)
-        print(self.watt_sell)
+        print(self.cost_watt)
+        print(self.sell_watt)
+        print(self.cost_unit)
+        print(self.sell_unit)
+        print(self.gm)
+        print(self.profit)
 
-mod_1 = SolarModule('REC', 'NP3')
-
-mod_1.rating(400)
-mod_1.cost(0.71)
-mod_1.show()
-
-mod_1.rating(500)
-mod_1.sell(1.00)
-mod_1.show()

@@ -1,0 +1,17 @@
+##[pylyzer] succeed /users/johnharpt/projects/solcalc/solar_module.py 1682876413
+.SolarModule: ClassType
+.SolarModule.sell_unit: Never
+.SolarModule.profit: Never
+.SolarModule.mfg: Never
+.SolarModule.line: Never
+.SolarModule.watt_rating: Never
+.SolarModule.cost_unit: Never
+.SolarModule.sell_watt: Never
+.SolarModule.cost_watt: Never
+.SolarModule.gm: Never
+.SolarModule.__call__: (mfg: Obj, line: Obj, watt_rating: Obj, cost_watt: Obj, sell_watt: Obj, cost_unit: Obj, sell_unit: Obj, gm: Obj, profit: Obj) -> .SolarModule
+.SolarModule.rating: |Type_24 :> Int, Type_12 <: Structural({.watt_rating = Type_24})|(self: Type_12, watt_rating: Int) -> NoneType
+.SolarModule.cost: |Type_15 <: Structural({.cost_watt = Type_26}), Type_26 :> Float|(self: Type_15, cost_watt: Float) -> NoneType
+.SolarModule.sell: |Type_28 :> Float, Type_18 <: Structural({.sell_watt = Type_28})|(self: Type_18, sell_watt: Float) -> NoneType
+.SolarModule.show: |Type_38: Type, Type_21 <: Structural({.profit = Type_38})|(self: Type_21) -> NoneType
+

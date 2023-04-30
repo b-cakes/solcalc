@@ -6,6 +6,12 @@
 # Required to know two parameters, but only need two parameters to find all values.
 
 # Enter cost per watt and GM%, return sell per watt.
+import solar_module as sm
+
+mod = sm.SolarModule()
+
+mod.show()
+
 def cost_watt_gm(cost_watt: float, gm: float) -> float:
     sell_watt = cost_watt / (1 - gm)
     return sell_watt
@@ -25,14 +31,17 @@ def sell_unit_gm(sell_unit: float, gm: float) -> float:
     cost_unit = sell_unit - (gm * sell_unit)
     return cost_unit
 
-test1 = cost_watt_gm(1.00, 0.20)
-print(test1)
+def gm_finder(cost_unit, sell_unit):
+    return
 
-test2 = sell_watt_gm(1.25, 0.20)
-print(test2)
-
-test3 = cost_unit_gm(400.00, 0.20)
-print(test3)
-
-test4 = sell_unit_gm(500.00, 0.20)
-print(test4)
+# test1 = cost_watt_gm(1.00, 0.20)
+# print(test1)
+#
+# test2 = sell_watt_gm(1.25, 0.20)
+# print(test2)
+#
+# test3 = cost_unit_gm(400.00, 0.20)
+# print(test3)
+#
+# test4 = sell_unit_gm(500.00, 0.20)
+# print(test4)
